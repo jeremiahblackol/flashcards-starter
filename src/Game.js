@@ -10,20 +10,15 @@ const Round = require('../src/Round');
 
 class Game {
   constructor() {
-    this.currentRound = 0;
+    this.roundCount = 0;
     this.currentRound;
   }
 
   start() {
+    this.roundCount++
     this.currentRound = this.makeRound()
     this.printMessage(this.makeDeck(), this.currentRound)
     this.printQuestion(this.currentRound) 
-
-    /*
-    invokes printMessage to display the message in the CLI
-    invokes printQuestion to kick off our helper 
-    -- functions that allow interaction via the CLI
-    */
   }
 
   makeCards() {
