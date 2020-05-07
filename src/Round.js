@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+/* eslint-disable no-console */
 const Turn = require('../src/Turn');
 
 class Round {

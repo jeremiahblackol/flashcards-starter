@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 //initial commit
 
 const data = require('./data');
@@ -17,7 +18,7 @@ class Game {
   start() {
     this.roundCount++
     this.currentRound = this.makeRound()
-    this.printMessage(this.makeDeck(), this.currentRound)
+    this.printMessage(this.makeDeck())
     this.printQuestion(this.currentRound) 
   }
 
@@ -38,13 +39,14 @@ class Game {
     return round
   }
 
-  printMessage(deck, round) {
-      console.log(`Welcome to FlashCards! You are playing with ${deck.countCards()} cards.
+  printMessage(deck) {
+    // eslint-disable-next-line no-console
+    console.log(`Welcome to FlashCards! You are playing with ${deck.countCards()} cards.
 -----------------------------------------------------------------------`)
   }
 
   printQuestion(round) {
-      util.main(round);
+    util.main(round);
   }
 }
 
