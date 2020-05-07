@@ -33,15 +33,11 @@ class Round {
   }
 
   calculatePercentCorrect() {
-    // eslint-disable-next-line max-len
     return Math.floor(100 - ((this.incorrectGuesses.length / this.deckLength) * 100))
   }
 
   endRound() {
-    // eslint-disable-next-line max-len
-    //console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`)
-    // eslint-disable-next-line max-len
-    return `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
+    console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`)
   }
 }
 
