@@ -1,14 +1,14 @@
 # README
 
-## Abstract at the top (A sentence or two describing the project)
+## Abstract 
 
   'Flashcards' is a multiple choice trivia game, played in the terminal, and created with OOP and TDD. It is used to increase      comfortability in the Terminal and with NodeJS, and to develop a working understanding of objects and testing.
 
-## A GIF of the working application
+## The Working Application
 
   <a href="https://media.giphy.com/media/dx6wo9s3RfTcbsWYln/giphy.gif"><img          src="https://media.giphy.com/media/dx6wo9s3RfTcbsWYln/giphy.gif"/></a>
 
-## Install/Setup instructions
+## Install/Setup Instructions
 
  - Once you have cloned the repo, change into the directory and install the library dependencies. Run:
    npm install
